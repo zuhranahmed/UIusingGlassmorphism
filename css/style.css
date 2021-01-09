@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #e6e9f2;
+  color: #182956;
+  background: url("../background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 7.5rem;
+  background: rgba(230, 233, 242, 0.1);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.container h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.container .sections {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  gap: 2.5rem;
+}
+
+.container .sections .left img {
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container .sections .left .tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+
+.container .sections .left .tabs .tab h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.container .sections .left .tabs .tab p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container .sections .right {
+  padding: 2.5rem;
+  height: 35rem;
+  background: rgba(230, 233, 242, 0.15);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .sections .right h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.container .sections .right p {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.4;
+}
+
+.container .sections .right a {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #182956;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .sections .right a:hover {
+  background-color: #e6e9f2;
+  color: #182956;
+}
+
+@media screen and (max-width: 798px) {
+  .container {
+    padding: 2rem;
+  }
+  .container .sections {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container .sections .left .tabs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .container .sections .right {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

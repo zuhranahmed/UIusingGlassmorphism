@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #e6e9f2;
+  color: #182956;
+  background: url("../background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 7.5rem;
+  //   Glass effect
+  background: rgba(230, 233, 242, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  .sections {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2.5rem;
+
+    .left {
+      img {
+        border-radius: 2rem;
+        margin-bottom: 4rem;
+        height: 35rem;
+        object-fit: cover;
+        object-position: center;
+      }
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+
+        .tab {
+          h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    .right {
+      padding: 2.5rem;
+      height: 35rem;
+      //   glass effect
+      background: rgba(230, 233, 242, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.4;
+      }
+      a {
+        padding: 1rem 2rem;
+        color: #fff;
+        background-color: #182956;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #e6e9f2;
+          color: #182956;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 798px) {
+  .container {
+    padding: 2rem;
+    .sections {
+      grid-template-columns: 1fr;
+
+      .left {
+        .tabs {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+      .right {
+        height: 100%;
+      }
+    }
+  }
+}
